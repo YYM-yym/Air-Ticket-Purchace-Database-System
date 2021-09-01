@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <title>StaffCreateNewFlights</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free HTML5 Template by " />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content=""/>
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="favicon.ico">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="css/superfish.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Date Picker -->
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- CS Select -->
+<link rel="stylesheet" href="css/cs-select.css">
+<link rel="stylesheet" href="css/cs-skin-border.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+
+<!-- //animation-effect -->
+</head>
+<body>
+    <div id="fh5co-wrapper">
+    <div id="fh5co-page">
+
+    <header id="fh5co-header-section" class="sticky-banner">
+        <div class="container">
+            <div class="header-top-right">
+                <!-- login for customer -->
+                <ul class="nav navbar-nav">
+                    <li><a href="/AirlineStaffLogout">Logout</a></li>
+                <!-- login for customer -->
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    <div class="container">
+            <div class="nav-header">
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+                <h1 id="fh5co-logo"><a href="index"><i class="icon-airplane"></i>FlightGo</a></h1>
+                <!-- START #fh5co-menu-wrap -->
+                <nav id="fh5co-menu-wrap" role="navigation">
+                    <ul class="sf-menu" id="fh5co-primary-menu">
+						<li><a href="/StaffViewMyFlights">View My flights</a></li>
+							<li class="active">
+								<a href="#" class="fh5co-sub-ddown">Administrative Operations</a>
+								<ul class="fh5co-sub-menu">
+									<li class="active"><a href="/StaffCreateNewFlights">Create New Flights</a></li>
+									<li><a href="/StaffChangeStatusofFlights">Change Status of Flights</a></li>
+									<li><a href="/StaffAddAirplane">Add Airplane</a></li>
+									<li><a href="/StaffAddNewAirport">Add Airport</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="fh5co-sub-ddown">View</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="/StaffViewBookingAgent">Booking Agent</a></li>
+									<li><a href="/StaffViewFrequentCustomers">Frequent Customers</a></li>
+									<li><a href="/StaffReports">Reports</a></li>
+								</ul>
+							</li>
+						<li><a href="/StaffComparisonOfRevenueEarned">Comparison Of Revenue Earned</a></li>
+						<li><a href="/StaffViewTopDestinations">Top Destinations</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!-- //header -->
+<!--typography-page -->
+	<div class="typo">
+		<div class="container">
+			<h3 class="title animated wow zoomIn">Create New Flights</h3>
+			<!-- for-specify a range of dates -->
+				<form action="/StaffCreateNewFlights" method="POST">
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Flight Number</label>
+							<input type="int" class="form-control" name = "flight_num" placeholder="Flight Number" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Departure airport</label>
+							<input type="text" class="form-control" name = "DepartureAirport" placeholder="Depature airport" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Departure date</label>
+							<input type="date" class="form-control" name = "DepartureDate" placeholder="Depature date" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Departure time</label>
+							<input type="time" class="form-control" name = "DepartureTime" placeholder="Depature time" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Arrival airport</label>
+							<input type="text" class="form-control" name = "ArrivalAirport" placeholder="Arrival airport" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Arrival date</label>
+							<input type="date" class="form-control" name = "ArrivalDate" placeholder="Arrival date" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Arrival time</label>
+							<input type="time" class="form-control" name = "ArrivalTime" placeholder="Arrival time" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Ticket price</label>
+							<input type="int" class="form-control" name = "TicketPrice" placeholder="Ticket price" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<section>
+							<label for="class">Flight status</label>
+							<!-- <select class="cs-select cs-skin-border", name='FlightStatus'> -->
+							<select name='FlightStatus'>
+								<option value ="upcoming">Upcoming</option>
+								<option value ="in progress">InProgress</option>
+								<option value ="delayed">Delayed</option>
+							</select>
+						</section>
+					</div>
+					<div class="col-xxs-12 col-xs-12 mt">
+						<div class="input-field">
+							<label for="from">Airplane ID</label>
+							<input type="int" class="form-control" name = "airplane_id" placeholder="Airplane ID" aria-describedby="basic-addon1" required/></br>
+						</div>
+					</div>
+					
+					<div class="col-xs-offset-10">
+						<input type="submit" class="btn btn-primary btn-block" value="Create New Flight"></br></br>
+					</div>
+				</form>
+			<!-- end-for-specify a range of dates -->
+			<!-- for-tables -->
+			<div class="grid_3 grid_5 animated wow slideInUp">
+				<div class="bs-docs-example animated wow slideInUp" data-wow-delay=".5s">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Airline name</th>
+								<th>Flight number</th>
+								<th>Departure airport</th>
+								<th>Departure date</th>
+								<th>Departure time</th>
+								<th>Arrival airport</th>
+								<th>Arrival date</th>
+								<th>Arrival time</th>
+								<th>Ticket price</th>
+								<th>Flight status</th>
+								<th>airplane_id</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for row in rows %}
+							<tr>
+							<td>{{row[0]}}</td>
+							<td>{{row[1]}}</td>
+							<td>{{row[2]}}</td>
+							<td>{{row[3]}}</td>
+							<td>{{row[4]}}</td>
+							<td>{{row[5]}}</td>
+							<td>{{row[6]}}</td>
+							<td>{{row[7]}}</td>
+							<td>{{row[8]}}</td>
+							<td>{{row[9]}}</td>
+							<td>{{row[10]}}</td>
+
+						</tr>
+						{% endfor %}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% if message %}
+	<script>
+		alert("Successfully Added.");
+	</script>
+	{% endif %}
+	{% if error %}
+	<script>
+		alert("Fail to Add!");
+	</script>
+	{% endif %}
+<!-- //typography-page -->
+<!-- footer -->
+<div class="footer-copy">
+	<div class="container">
+		<div class="footer-left animated wow slideInUp">
+			<p>Copyright &copy; 2021. Yumo & Chengxi All rights reserved.</p>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <title>StaffViewTopDestinations</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free HTML5 Template by " />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content=""/>
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="favicon.ico">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="css/superfish.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Date Picker -->
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+<!-- CS Select -->
+<link rel="stylesheet" href="css/cs-select.css">
+<link rel="stylesheet" href="css/cs-skin-border.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+
+<!-- //animation-effect -->
+</head>
+<body>
+    <div id="fh5co-wrapper">
+    <div id="fh5co-page">
+
+    <header id="fh5co-header-section" class="sticky-banner">
+        <div class="container">
+            <div class="header-top-right">
+                <!-- login for customer -->
+                <ul class="nav navbar-nav">
+                    <li><a href="/AirlineStaffLogout">Logout</a></li>
+                <!-- login for customer -->
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    <div class="container">
+            <div class="nav-header">
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+                <h1 id="fh5co-logo"><a href="index"><i class="icon-airplane"></i>FlightGo</a></h1>
+                <!-- START #fh5co-menu-wrap -->
+                <nav id="fh5co-menu-wrap" role="navigation">
+                    <ul class="sf-menu" id="fh5co-primary-menu">
+						<li><a href="/StaffViewMyFlights">View My flights</a></li>
+							<li>
+								<a href="#" class="fh5co-sub-ddown">Administrative Operations</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="/StaffCreateNewFlights">Create New Flights</a></li>
+									<li><a href="/StaffChangeStatusofFlights">Change Status of Flights</a></li>
+									<li><a href="/StaffAddAirplane">Add Airplane</a></li>
+									<li><a href="/StaffAddNewAirport">Add Airport</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="fh5co-sub-ddown">View</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="/StaffViewBookingAgent">Booking Agent</a></li>
+									<li><a href="/StaffViewFrequentCustomers">Frequent Customers</a></li>
+									<li><a href="/StaffReports">Reports</a></li>
+								</ul>
+							</li>
+						<li><a href="/StaffComparisonOfRevenueEarned">Comparison Of Revenue Earned</a></li>
+						<li class="active"><a href="/StaffViewTopDestinations">Top Destinations</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!-- //header -->
+<!--typography-page -->
+<div class="typo">
+	<div class="container">
+		</br><h3 class="title animated wow zoomIn">View Top Destinations In the Past 3 month</h3>
+		<div class="grid_3 grid_5 animated wow slideInUp">
+			<div class="bs-docs-example animated wow slideInUp" data-wow-delay=".5s">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>City</th>
+							<th>Number of tickets sold</th>
+							<!-- //how to choose the certain ticket -->
+						</tr>
+					</thead>
+					<tbody>
+						{% for row in rows1 %}
+						<tr>
+							<td>{{row[0]}}</td>
+							<td>{{row[1]}}</td>
+							<!-- //这里要改一下，第一位是ranking数字 -->
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+		</div>
+		</div>
+		</br></br><h3 class="title animated wow zoomIn">View Top Destinations Last Year</h3>
+		<div class="grid_3 grid_5 animated wow slideInUp">
+			<div class="bs-docs-example animated wow slideInUp" data-wow-delay=".5s">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>City</th>
+							<th>Number of tickets sold</th>
+							<!-- //how to choose the certain ticket -->
+						</tr>
+					</thead>
+					<tbody>
+						{% for row in rows2 %}
+						<tr>
+							<td>{{row[0]}}</td>
+							<td>{{row[1]}}</td>
+							<!-- //这里要改一下，第一位是ranking数字 -->
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+		</div>
+		</div>
+	</div>
+	{% if message %}
+	<script>
+		alert("Successfully Created!");
+	</script>
+	{% endif %}
+<!-- //typography-page -->
+<!-- footer -->
+<div class="footer-copy">
+	<div class="container">
+		<div class="footer-left animated wow slideInUp">
+			<p>Copyright &copy; 2021. Yumo & Chengxi All rights reserved.</p>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+
+</body>
+</html>
